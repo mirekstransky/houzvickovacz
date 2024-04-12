@@ -1,0 +1,588 @@
+/********************
+*** Header **********
+********************/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #fdf2e9; */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+.logo {
+  width: 16rem;
+}
+.main-nav-list li {
+  display: inline-block;
+}
+
+/********************
+*** Navigation ******
+********************/
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.2rem 2.4rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  background-color: #f87171;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+.main-nav-link.nav-special:link,
+.main-nav-link.nav-special:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #f87171;
+}
+.main-nav-link.nav-special:hover,
+.main-nav-link.nav-special:active {
+  background-color: #7c3939;
+}
+
+/********************
+*** Hero section ****
+********************/
+
+.section-hero {
+  background-color: #fdf2e9;
+  /* background: rgba(0, 0, 0, 0) url("../images/bg-image.jpg") repeat center
+    bottom 40% / cover; */
+  padding: 0 0 9.6rem 0;
+
+  /* ************************************ */
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../images/contact-img-big.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 4.8rem 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  height: 100%;
+  background-image: url("../images/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/***********************
+*** Lessons section ****
+***********************/
+.section-lessons {
+  padding: 4.8rem 0 3.2rem 0;
+}
+.lesson-img img {
+  width: 100%;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 2rem;
+}
+.lesson-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+/***********************
+*** BMI section ****
+***********************/
+.section-bmi {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 3.2rem 0;
+}
+.bmi-calculate,
+.bmi-info {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  background-color: #f87171;
+  border-radius: 2rem;
+}
+
+.bmi-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.bmi-form input {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3.6rem;
+}
+.bmi-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 2.4rem;
+}
+.bmi-table .bmi-text {
+  border-bottom: 1px solid #333;
+}
+
+.btn-block button,
+.btn-block a {
+  display: block;
+  margin-top: 1.8rem;
+  width: 100%;
+}
+.bmi-table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row: 2rem;
+}
+.bmi-result {
+  margin-top: 3.6rem;
+}
+.result-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+/***********************
+*** Contact section ****
+***********************/
+.section-contact {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 8.4rem 0;
+}
+.mapa-contact {
+  height: 100%;
+  width: 100%;
+}
+.grid-contact {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.contact-form {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  background-color: #f87171;
+}
+.contact-form-input {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.contact-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  /* margin-bottom: 1.2rem; */
+}
+.contact-img {
+  height: 100%;
+  background-image: url("../images/contact-img.JPG");
+  background-size: cover;
+  background-position: center;
+}
+.contact-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+.contact-form-input input,
+.contact-form-input select,
+.message-form textarea {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fff;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.message-form {
+  grid-column: 1/-1;
+  text-align: start;
+}
+.message-form textarea {
+  height: 12rem;
+}
+.btn--2-cols {
+  grid-column: 1/-1;
+}
+.btn-contact {
+  background-color: #fdf2e9;
+}
+/***********************
+*** News section *******
+***********************/
+.section-news {
+  padding: 4.8rem 0 3.2rem 0;
+  background-color: #fff;
+}
+.person-input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+
+.news-form-input .news-email input {
+  width: 30%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.btn-news {
+  padding: 1.1rem;
+}
+.person-input input {
+  width: 2.4em;
+  height: 2.4rem;
+}
+.person-input label {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+/***********************
+*** News info section *******
+***********************/
+.section-news-info {
+  background-color: #fff;
+  padding: 4.8rem 0 3.2rem 0;
+  background-color: #f87171;
+}
+.news-info-box {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  background-color: #fdf2e9;
+  position: relative;
+  border-radius: 2rem;
+  gap: 4rem;
+}
+.news-info-img img {
+  width: 100%;
+  border-radius: 100%;
+
+  /* height: 100%;
+  background-image: url("../images/info.jpg");
+  background-size: cover;
+  background-position: center; */
+}
+.news-info-img {
+  align-self: center;
+}
+.news-info-arrow {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  cursor: pointer;
+  color: #e67e22;
+}
+.news-info-arrow-icon {
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  border: 2px solid #e67e22;
+  height: 9.8rem;
+  width: 9.8rem;
+}
+.news-info-arrow:hover {
+  color: #f87171;
+}
+/* ******************************** */
+/* Section lecture */
+/* ******************************** */
+.section-lecture {
+  padding: 4.8rem 0 3.2rem 0;
+
+  background-color: #fdf2e9;
+}
+
+.lecture {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+  background-color: #fff;
+}
+
+.lecture:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.lecture-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+
+.lecture-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #333;
+  border-radius: 100px;
+  font-weight: 600;
+}
+
+.tag--beginner {
+  background-color: #51cf66;
+}
+/* .tag--vegan {
+  background-color: #94d82d;
+}
+.tag--paleo {
+  background-color: #ffd43b;
+} */
+
+.lecture-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.lecture-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.lecture-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.lecture-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+.lecture-img {
+  width: 100%;
+}
+.lesson-link {
+  text-decoration: none;
+}
+/* ********************* */
+/* Section O nás */
+/* ************************ */
+.section-onas {
+  padding: 4.8rem 0 3.2rem 0;
+  background-color: #fff;
+}
+.onas-img img {
+  width: 75%;
+  border-radius: 2rem;
+}
+/* ***************************** */
+/* Section tuzemské */
+/* ***************************** */
+.section-zajezdy {
+  padding: 4.8rem 0 3.2rem 0;
+  background-color: #fdf2e9;
+}
+.zajezdy-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #f87171;
+}
+.zajezdy-box img {
+  width: 100%;
+}
+
+.zajezdy-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.zajezdy-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* ******************************************* */
+/* FOOTER */
+/* ************************************************* */
+.footer {
+  background-color: #333;
+  padding: 5.2rem 0 3.2rem 0;
+}
+
+.contact-social {
+  justify-self: end;
+  align-self: flex-start;
+}
+.footer-icon {
+  height: 3.6rem;
+  width: 3.6rem;
+}
+.icon-facebook {
+  color: #0866ff;
+}
+.icon-instagram {
+  color: #e67e22;
+}
+.icon-twitter {
+  color: #fff;
+}
+.icon-email {
+  color: #fff;
+}
+.icon-tel {
+  color: #fff;
+}
+.social-icon {
+  display: flex;
+  justify-content: space-between;
+}
+/**************************/
+/* PRICING SECTION */
+/**************************/
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan {
+  border-radius: 11px;
+  width: 75%;
+}
+
+.pricing-plan--once {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 4.6rem;
+}
+
+.pricing-plan--ten {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--ten::after {
+  content: "OBLÍBENÉ";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffd43b;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-sing-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+.plan-details {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.feature-icon {
+  color: #e67e22;
+  height: 3.2rem;
+  width: 3.2rem;
+  background-color: #fdf2e9;
+  margin-bottom: 3.2rem;
+  padding: 1.6rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
