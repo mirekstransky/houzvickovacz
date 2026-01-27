@@ -275,3 +275,64 @@ strong {
 .text-right {
   text-align: right;
 }
+
+/**************************/
+/* RESPONSIVE UTILITIES   */
+/**************************/
+
+@media (max-width: 75em) {
+  /* 1200px */
+  .container {
+    padding: 0 2.4rem;
+  }
+}
+
+@media (max-width: 56.25em) {
+  /* 900px */
+  .grid--3-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--5-cols,
+  .grid--6-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 37.5em) {
+  /* 600px */
+  .container {
+    padding: 0 1.6rem;
+  }
+
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols,
+  .grid--5-cols,
+  .grid--6-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .btn,
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+    padding: 1.2rem 2.4rem;
+  }
+}

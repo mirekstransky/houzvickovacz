@@ -8,12 +8,30 @@
   /* background-color: #fdf2e9; */
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 .logo {
   width: 16rem;
 }
 .main-nav-list li {
   display: inline-block;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 3.2rem;
+  width: 3.2rem;
+  color: #fff;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /********************
@@ -162,7 +180,7 @@
 .bmi-table {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-row: 2rem;
+  row-gap: 2rem;
 }
 .bmi-result {
   margin-top: 3.6rem;
@@ -173,6 +191,11 @@
   color: #333;
   margin-bottom: 1.2rem;
 }
+.bmi-category {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333;
+}
 /***********************
 *** Contact section ****
 ***********************/
@@ -180,20 +203,21 @@
   background-color: #fdf2e9;
   padding: 4.8rem 0 8.4rem 0;
 }
-.mapa-contact {
-  height: 100%;
-  width: 100%;
-}
 .grid-contact {
   display: grid;
   grid-template-columns: 2fr 1fr;
   border-radius: 2rem;
   overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.08);
+  column-gap: 4.8rem;
 }
-
-.contact-form {
+.contact-form,
+.contact-info {
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
-  background-color: #f87171;
+}
+.contact-info .heading-secondary {
+  color: #333;
 }
 .contact-form-input {
   display: grid;
@@ -216,6 +240,87 @@
   font-size: 1.8rem;
   line-height: 1.8;
   margin-bottom: 4.8rem;
+}
+.contact-map-wrapper {
+  background-color: transparent;
+}
+.mapa-contact {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  border-radius: 1.2rem;
+}
+
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.4rem;
+  margin-bottom: 3.6rem;
+}
+
+.contact-card {
+  background-color: #fdf2e9;
+  border-radius: 1.4rem;
+  padding: 2.4rem 2rem;
+}
+
+.contact-card-name {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.contact-card-role {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+  margin-bottom: 1.6rem;
+}
+
+.contact-card-row {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.contact-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #f87171;
+}
+
+.contact-location {
+  margin-top: 1.6rem;
+}
+
+.contact-location-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.location-note {
+  margin-top: 0.8rem;
+  font-style: italic;
+}
+
+.contact-map-card {
+  background-color: #fdf2e9;
+  border-radius: 1.4rem;
+  padding: 2.4rem 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.contact-map-title {
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 .contact-form-input input,
 .contact-form-input select,
@@ -411,6 +516,68 @@
 .lesson-link {
   text-decoration: none;
 }
+
+/* ******************************** */
+/* Section rozvrh */
+/* ******************************** */
+.section-rozvrh {
+  padding: 4.8rem 0 3.2rem 0;
+  background-color: #fdf2e9;
+}
+
+.schedule-intro {
+  max-width: 70rem;
+  margin: 0 auto 4.8rem auto;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 3.2rem;
+}
+
+.schedule-day-card {
+  background-color: #fff;
+  border-radius: 1.4rem;
+  padding: 3.2rem 3.6rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.08);
+}
+
+.schedule-day {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2.4rem;
+}
+
+.schedule-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.schedule-item {
+  font-size: 1.8rem;
+  line-height: 1.4;
+}
+
+.schedule-time {
+  display: block;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #f87171;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.schedule-lesson {
+  display: block;
+  font-weight: 500;
+  color: #333;
+}
+
 /* ********************* */
 /* Section O nás */
 /* ************************ */
@@ -481,6 +648,162 @@
   display: flex;
   justify-content: space-between;
 }
+
+/**************************/
+/* RESPONSIVE LAYOUT      */
+/**************************/
+
+@media (max-width: 56.25em) {
+  /* 900px */
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text-box {
+    text-align: center;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-contact {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-map-wrapper {
+    order: 2;
+  }
+}
+
+@media (max-width: 50em) {
+  /* 800px */
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateY(-200%);
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: all 0.3s;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    padding: 0.8rem 0;
+  }
+
+  .nav-open .main-nav {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+}
+
+@media (max-width: 37.5em) {
+  /* 600px */
+  .header {
+    padding: 0 2.4rem;
+  }
+
+  .logo {
+    width: 13rem;
+  }
+
+  .news-info-box {
+    grid-template-columns: 1fr;
+    padding: 3.2rem 2.4rem 3.2rem 2.4rem;
+  }
+  /* Na mobilech chceme šipku také, jen jinak umístěnou */
+  .news-info-arrow {
+    position: static;
+    transform: none;
+    margin-top: 2.4rem;
+    justify-self: center;
+  }
+
+  .footer .grid--2-cols {
+    grid-template-columns: 1fr;
+    row-gap: 3.2rem;
+  }
+
+  .contact-social {
+    justify-self: flex-start;
+  }
+
+  .section-hero {
+    height: auto;
+    padding-bottom: 6.4rem;
+  }
+
+  .hero {
+    padding: 3.2rem 2.4rem;
+    gap: 4.8rem;
+  }
+
+  .bmi-calculate,
+  .bmi-info {
+    padding: 3.2rem 2.4rem 4rem 2.4rem;
+  }
+
+  .bmi-table {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form,
+  .contact-info {
+    padding: 3.2rem 2.4rem 4rem 2.4rem;
+  }
+
+  .news-form-input .news-email input {
+    width: 100%;
+  }
+
+  .section-pricing .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .onas-img img {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 /**************************/
 /* PRICING SECTION */
 /**************************/
@@ -490,11 +813,10 @@
 
 .pricing-plan {
   border-radius: 11px;
-  width: 75%;
+  width: 100%;
 }
 
 .pricing-plan--once {
-  justify-self: end;
   border: 2px solid #fdf2e9;
   padding: 4.6rem;
 }
