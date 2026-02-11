@@ -72,6 +72,11 @@ const newsItems = [
     title: "Začínáme cvičit!",
     text: "Začínáme cvičit v pondělí 12.01.2026 a ve středu 14.01.2026!",
   },
+  {
+    image: "images/info.jpg",
+    title: "Už cvičíme!",
+    text: "Začínáme cvičit v pondělí 12.01.2026 a ve středu 14.01.2026!",
+  },
 ];
 
 // Inicializace obsahu aktualit – funguje i bez šipky (mobile first)
