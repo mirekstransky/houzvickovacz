@@ -578,6 +578,30 @@
   color: #333;
 }
 
+.schedule-note {
+  margin-top: 2.4rem;
+  padding: 1.4rem 1.8rem;
+  background-color: #fff5f5;
+  border-left: 4px solid #f87171;
+  border-radius: 0.8rem;
+}
+
+.schedule-note-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #f87171;
+  margin-bottom: 0.6rem;
+}
+
+.schedule-note-dates {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.6;
+}
+
 /* ********************* */
 /* Section O nás */
 /* ************************ */

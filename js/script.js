@@ -19,14 +19,8 @@ if (bmiForm && heightInput && weightInput && bmiResultEl && bmiCategoryEl) {
     event.preventDefault();
 
     // Umožní zadat jak čárku, tak tečku jako desetinný oddělovač
-    const heightValue = (heightInput.value || "")
-      .toString()
-      .trim()
-      .replace(/,/g, ".");
-    const weightValue = (weightInput.value || "")
-      .toString()
-      .trim()
-      .replace(/,/g, ".");
+    const heightValue = (heightInput.value || "").toString().trim().replace(/,/g, ".");
+    const weightValue = (weightInput.value || "").toString().trim().replace(/,/g, ".");
 
     const height = parseFloat(heightValue);
     const weight = parseFloat(weightValue);
@@ -70,11 +64,6 @@ const newsItems = [
   {
     image: "images/info.jpg",
     title: "Začínáme cvičit!",
-    text: "Začínáme cvičit v pondělí 12.01.2026 a ve středu 14.01.2026!",
-  },
-  {
-    image: "images/info.jpg",
-    title: "Už cvičíme!",
     text: "Začínáme cvičit v pondělí 12.01.2026 a ve středu 14.01.2026!",
   },
 ];
