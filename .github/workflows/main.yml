@@ -3,7 +3,7 @@ name: Deploy to FTP
 on:
   push:
     branches:
-      - master  # Zde nastav větev, při které se má akce spustit
+      - main  # Zde nastav větev, při které se má akce spustit
 
 jobs:
   web-deploy:
