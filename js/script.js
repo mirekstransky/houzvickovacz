@@ -63,8 +63,8 @@ const newsTextEl = document.querySelector(".news-info-text .general-text");
 const newsItems = [
   {
     image: "images/info.jpg",
-    title: "Začínáme cvičit!",
-    text: "Začínáme cvičit v pondělí 12.01.2026 a ve středu 14.01.2026!",
+    title: "Prázdninové lekce!",
+    text: "Od 10.8 do 31.8 budou probíhat venkovní lekce, ve sportovní hale se o prazdninách necvičí!",
   },
 ];
 
