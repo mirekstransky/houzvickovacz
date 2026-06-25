@@ -243,6 +243,9 @@
 }
 .contact-map-wrapper {
   background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
 }
 .mapa-contact {
   height: 100%;
@@ -295,6 +298,10 @@
   margin-top: 1.6rem;
 }
 
+.contact-location + .contact-location {
+  margin-top: 3.2rem;
+}
+
 .contact-location-title {
   font-size: 1.8rem;
   font-weight: 600;
@@ -312,7 +319,7 @@
   background-color: #fdf2e9;
   border-radius: 1.4rem;
   padding: 2.4rem 2rem;
-  height: 100%;
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
