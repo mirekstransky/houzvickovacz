@@ -64,7 +64,7 @@ const newsItems = [
   {
     image: "images/info.jpg",
     title: "Prázdninové lekce!",
-    text: "Od 10.8 do 31.8 budou probíhat venkovní lekce, ve sportovní hale se o prazdninách necvičí!",
+    text: "Od 10.8 do 31.8 budou probíhat venkovní lekce, ve sportovní hale se o prazdninách necvičí!!",
   },
 ];
 
