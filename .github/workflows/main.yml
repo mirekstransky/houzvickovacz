@@ -3,7 +3,7 @@ name: Deploy to FTP
 on:
   push:
     branches:
-      - main  # Zde nastav větev, při které se má akce spustit
+      - master  # Ujisti se, že tvá hlavní větev se jmenuje master
 
 jobs:
   web-deploy:
@@ -19,4 +19,6 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /www/  # Cesta na serveru, kam se má web nahrát
+          protocol: sftp       # Přepnuto na bezpečnější SFTP
+          port: 222            # Tvůj specifický port pro SFTP
+          server-dir: /www/    # Cesta na serveru
