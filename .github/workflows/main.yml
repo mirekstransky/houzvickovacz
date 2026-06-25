@@ -3,7 +3,7 @@ name: Deploy to FTP
 on:
   push:
     branches:
-      - master  # Ujisti se, že tvá hlavní větev se jmenuje master
+      - main  # Ujisti se, že tvá hlavní větev se jmenuje master
 
 jobs:
   web-deploy:
